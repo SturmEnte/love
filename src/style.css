@@ -1,0 +1,64 @@
+:root {
+	--background: #1e1e1e;
+	--accent: #e5383b;
+	--margin: 2vw;
+
+	font-size: 6vw;
+}
+
+body {
+	margin: 0;
+	padding: var(--margin);
+	box-sizing: border-box;
+	width: 100vw;
+	height: 100vh;
+	background: var(--background);
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+}
+
+* {
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#heart,
+#date,
+#values * {
+	color: var(--accent);
+}
+
+#names {
+	font-size: 1.8rem;
+}
+
+#heart {
+	font-size: 12rem;
+}
+
+#date {
+	margin-bottom: var(--margin);
+}
+
+#together-for {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	box-sizing: border-box;
+	padding: var(--margin);
+}
+
+#units {
+	margin-left: var(--margin);
+}
+
+#bottom {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}

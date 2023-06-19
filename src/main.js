@@ -1,8 +1,6 @@
-document.onload = () => {
-	document.getElementById("settings").onclick = () => setSettings(true);
-	if (!localStorage.getItem("date") || !localStorage.getItem("names")) setSettings(true);
-	else updateValues();
-};
+document.getElementById("settings").onclick = () => setSettings(true);
+if (!localStorage.getItem("date") || !localStorage.getItem("names")) setSettings(true);
+else updateValues();
 
 function updateValues() {
 	const nameElem = document.getElementById("names");

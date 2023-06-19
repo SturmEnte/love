@@ -1,4 +1,4 @@
-document.getElementById("settings").onclick = () => setSettings(true);
+document.getElementById("heart").onclick = () => setSettings(true);
 if (!localStorage.getItem("date") || !localStorage.getItem("names")) setSettings(true);
 else updateValues();
 

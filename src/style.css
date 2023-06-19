@@ -31,21 +31,13 @@ body {
 	color: var(--accent);
 }
 
-#settings {
-	position: absolute;
-	top: var(--margin);
-	left: var(--margin);
-	width: 10vw;
-	height: 10vw;
-	cursor: pointer;
-}
-
 #names {
 	font-size: 1.8rem;
 }
 
 #heart {
 	font-size: 12rem;
+	cursor: pointer;
 }
 
 #date {

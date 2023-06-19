@@ -16,9 +16,15 @@ function updateValues() {
 
 	const date = new Date(Number(localStorage.getItem("date")));
 
-	dateElem.innerHTML = date.getDate().toString().padStart(2, "0") + "." + (date.getMonth() + 1).toString().padStart(2, "0") + "." + date.getFullYear();
+	dateElem.innerText = date.getDate().toString().padStart(2, "0") + "." + (date.getMonth() + 1).toString().padStart(2, "0") + "." + date.getFullYear();
 
-	console.log("Updated");
+	const diffTime = Math.abs(new Date() - date);
+	daysElem.innerText = Math.round(diffTime / (1000 * 60 * 60 * 24));
+	weeksElem.innerText = Math.round(diffTime / (1000 * 60 * 60 * 24) / 7);
+	monthsElem.innerText = (new Date().getFullYear() - date.getFullYear()) * 12 + (new Date().getMonth() - date.getMonth());
+	yearsElem.innerText = new Date().getFullYear() - date.getFullYear();
+
+	console.log("Updated values");
 }
 
 function setSettings(open) {

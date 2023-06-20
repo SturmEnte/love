@@ -1,15 +1,18 @@
+const nameElem = document.getElementById("names");
+const dateElem = document.getElementById("date");
+const daysElem = document.getElementById("days");
+const weeksElem = document.getElementById("weeks");
+const monthsElem = document.getElementById("months");
+const yearsElem = document.getElementById("years");
+const popupElem = document.getElementById("popup");
+const namesInElem = document.getElementById("names-input");
+const dateInElem = document.getElementById("date-input");
+
 document.getElementById("heart").onclick = () => setSettings(true);
 if (!localStorage.getItem("date") || !localStorage.getItem("names")) setSettings(true);
 else updateValues();
 
 function updateValues() {
-	const nameElem = document.getElementById("names");
-	const dateElem = document.getElementById("date");
-	const daysElem = document.getElementById("days");
-	const weeksElem = document.getElementById("weeks");
-	const monthsElem = document.getElementById("months");
-	const yearsElem = document.getElementById("years");
-
 	nameElem.innerText = localStorage.getItem("names");
 
 	const date = new Date(Number(localStorage.getItem("date")));

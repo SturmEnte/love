@@ -88,6 +88,11 @@ body {
 	width: 100%;
 }
 
+#settings form input {
+	width: 90%;
+	margin-bottom: var(--margin);
+}
+
 #curtain {
 	position: absolute;
 	top: 0;

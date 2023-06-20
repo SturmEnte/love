@@ -37,5 +37,8 @@ function setSettings(open) {
 	if (open) popupElem.removeAttribute("hidden");
 	else popupElem.setAttribute("hidden", "");
 
+	if (open) {
+		if (localStorage.getItem("names")) namesInElem.value = localStorage.getItem("names");
+		if (localStorage.getItem("date")) dateInElem.value = new Date(Number(localStorage.getItem("date"))).toISOString().slice(0, 10);
 	}
 }

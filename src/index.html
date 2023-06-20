@@ -7,24 +7,38 @@
 		<link rel="stylesheet" href="/style.css" />
 	</head>
 	<body>
-		<div id="names">Names</div>
-		<div id="heart">♥</div>
-		<div id="bottom">
-			<div id="date">Date</div>
-			<div>You have been together for:</div>
-			<div id="together-for">
-				<div id="values">
-					<div id="days">d</div>
-					<div id="weeks">w</div>
-					<div id="months">m</div>
-					<div id="years">y</div>
+		<div id="main">
+			<div id="names" class="title">Names</div>
+			<div id="heart">♥</div>
+			<div id="bottom">
+				<div id="date">Date</div>
+				<div>You have been together for:</div>
+				<div id="together-for">
+					<div id="values">
+						<div id="days">d</div>
+						<div id="weeks">w</div>
+						<div id="months">m</div>
+						<div id="years">y</div>
+					</div>
+					<div id="units">
+						<div>days</div>
+						<div>weeks</div>
+						<div>months</div>
+						<div>years</div>
+					</div>
 				</div>
-				<div id="units">
-					<div>days</div>
-					<div>weeks</div>
-					<div>months</div>
-					<div>years</div>
-				</div>
+			</div>
+		</div>
+		<div id="popup" hidden>
+			<div id="curtain"></div>
+			<div id="settings" class="rounded">
+				<div class="title">Settings</div>
+				<form>
+					<input type="text" id="names-input" placeholder="Names" />
+					<input type="date" id="date-input" />
+					<input type="submit" value="Save" />
+				</form>
+				<div><!-- Blank for the layout --></div>
 			</div>
 		</div>
 	</body>

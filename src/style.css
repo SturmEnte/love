@@ -36,10 +36,6 @@ body {
 	color: var(--accent);
 }
 
-#names {
-	font-size: 1.8rem;
-}
-
 #heart {
 	font-size: 12rem;
 	cursor: pointer;
@@ -68,3 +64,7 @@ body {
 	justify-content: center;
 	flex-direction: column;
 }
+.title {
+	font-size: 1.8rem;
+}
+

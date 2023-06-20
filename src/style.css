@@ -64,6 +64,22 @@ body {
 	justify-content: center;
 	flex-direction: column;
 }
+
+#settings {
+	position: absolute;
+	top: var(--margin);
+	left: var(--margin);
+	width: calc(100vw - 2 * var(--margin));
+	height: calc(100vh - 2 * var(--margin));
+	background: var(--background);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	padding: var(--margin);
+	box-sizing: border-box;
+}
+
 #curtain {
 	position: absolute;
 	top: 0;

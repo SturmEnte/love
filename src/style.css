@@ -80,6 +80,14 @@ body {
 	box-sizing: border-box;
 }
 
+#settings form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+}
+
 #curtain {
 	position: absolute;
 	top: 0;

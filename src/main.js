@@ -20,10 +20,15 @@ function updateValues() {
 	dateElem.innerText = date.getDate().toString().padStart(2, "0") + "." + (date.getMonth() + 1).toString().padStart(2, "0") + "." + date.getFullYear();
 
 	const diffTime = Math.abs(new Date() - date);
-	daysElem.innerText = Math.round(diffTime / (1000 * 60 * 60 * 24));
-	weeksElem.innerText = Math.round(diffTime / (1000 * 60 * 60 * 24) / 7);
-	monthsElem.innerText = (new Date().getFullYear() - date.getFullYear()) * 12 + (new Date().getMonth() - date.getMonth());
-	yearsElem.innerText = new Date().getFullYear() - date.getFullYear();
+	const days = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+	const weeks = Math.floor(days / 7);
+	const months = Math.floor(days / 30.4375); // I calculated this number by calculating how many days are in a month on average in four years
+	const years = Math.floor(days / 365);
+
+	daysElem.innerText = days;
+	weeksElem.innerText = weeks;
+	monthsElem.innerText = months;
+	yearsElem.innerText = years;
 
 	console.log("Updated values");
 }

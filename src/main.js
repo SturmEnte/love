@@ -34,5 +34,8 @@ function updateValues() {
 }
 
 function setSettings(open) {
-	console.log("Open settings");
+	if (open) popupElem.removeAttribute("hidden");
+	else popupElem.setAttribute("hidden", "");
+
+	}
 }

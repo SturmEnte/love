@@ -42,3 +42,28 @@ function setSettings(open) {
 		if (localStorage.getItem("date")) dateInElem.value = new Date(Number(localStorage.getItem("date"))).toISOString().slice(0, 10);
 	}
 }
+
+document.querySelector("#settings form").onsubmit = (e) => {
+	e.preventDefault();
+
+	let names = namesInElem.value;
+	let date = dateInElem.value;
+
+	if (!names) {
+		alert("Names are required!");
+		return;
+	}
+
+	if (!date) {
+		alert("A date is required!");
+		return;
+	}
+
+	console.log(date);
+
+	localStorage.setItem("names", names);
+	localStorage.setItem("date", new Date(date).getTime());
+
+	updateValues();
+	setSettings(false);
+};

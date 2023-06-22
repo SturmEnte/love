@@ -2,7 +2,7 @@
 	"short_name": "Love",
 	"name": "Love",
 	"description": "Love",
-	"scope": "/",
+	"scope": "./",
 	"icons": [
 		{
 			"src": "favicon.png",

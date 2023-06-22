@@ -1,6 +1,6 @@
 const STATIC_CACHE = "STATIC-V1";
 
-const ASSETS = ["/", "/style.css", "main.js", "favicon.png", "manifest.webmanifest"];
+const ASSETS = ["./", "style.css", "main.js", "favicon.png", "manifest.webmanifest"];
 
 self.oninstall = async (e) => {
 	cache = await caches.open(STATIC_CACHE);

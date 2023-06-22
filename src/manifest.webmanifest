@@ -12,7 +12,7 @@
 	],
 	"background_color": "#161a1d",
 	"theme_color": "#e5383b",
-	"start_url": "/",
+	"start_url": "./",
 	"display": "standalone",
 	"orientation": "portrait"
 }

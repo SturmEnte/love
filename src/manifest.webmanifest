@@ -1,0 +1,18 @@
+{
+	"short_name": "Love",
+	"name": "Love",
+	"description": "Love",
+	"scope": "/",
+	"icons": [
+		{
+			"src": "favicon.png",
+			"sizes": "100x100",
+			"type": "image/png"
+		}
+	],
+	"background_color": "#161a1d",
+	"theme_color": "#e5383b",
+	"start_url": "/",
+	"display": "standalone",
+	"orientation": "portrait"
+}

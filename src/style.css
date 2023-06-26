@@ -10,8 +10,8 @@
 
 body {
 	margin: 0;
-	width: 100vw;
-	height: 100vh;
+	width: 100svw;
+	height: 100svh;
 	background: var(--background);
 }
 
@@ -21,8 +21,8 @@ body {
 }
 
 #main {
-	width: 100vw;
-	height: 100vh;
+	width: 100svw;
+	height: 100svh;
 	padding: var(--margin);
 	box-sizing: border-box;
 	display: flex;
@@ -70,8 +70,8 @@ body {
 	position: absolute;
 	top: var(--margin);
 	left: var(--margin);
-	width: calc(100vw - 2 * var(--margin));
-	height: calc(100vh - 2 * var(--margin));
+	width: calc(100svw - 2 * var(--margin));
+	height: calc(100svh - 2 * var(--margin));
 	background: var(--background);
 	display: flex;
 	align-items: center;
@@ -98,8 +98,8 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100vw;
-	height: 100vh;
+	width: 100svw;
+	height: 100svh;
 	background: rgba(0, 0, 0, 0.5);
 	z-index: -1;
 }
